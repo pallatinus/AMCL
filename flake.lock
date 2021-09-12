@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "amcl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613391628,
+        "narHash": "sha256-7DFC9MKXi28x59tZPxK3biRSbcKOm2KgLKq5kw1E+Xw=",
+        "owner": "apache",
+        "repo": "incubator-milagro-crypto-c",
+        "rev": "7e8df018b9ce0035abdd7589dbca676821594bb3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apache",
+        "repo": "incubator-milagro-crypto-c",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1631098960,
+        "narHash": "sha256-6j6G/omHEFAnI2x7UvdrviGDNqiq1Fjd1A58Q6uc4sQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "12eb1d16ae3b6cbf0ea83e9228bca8ffd7cfe347",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-21.05",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "amcl": "amcl",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
