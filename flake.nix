@@ -46,9 +46,9 @@
         buildInputs = [ cmake doxygen ];
 
         installPhase = ''
-          mkdir $out
-          cd $out
-          cmake ${toString cmakeFlags} $src
+          mkdir -p $out/build && cd $out/build
+          cp -r $src/. $out
+          cmake ${toString cmakeFlags} ..
           export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:\.
           make
           make test
