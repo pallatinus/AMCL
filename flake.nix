@@ -18,7 +18,7 @@
       buildMPIN = false;
       buildX509 = false;
       buildShareLib = true;
-      curves = "bls_BLS381,SECP256K1";
+      curves = "BLS381,SECP256K1";
       chunk = "64";
       rsa = "";
       cFlags = "-fPIC";
