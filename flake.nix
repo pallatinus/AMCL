@@ -18,7 +18,7 @@
       buildMPIN = false;
       buildX509 = false;
       buildShareLib = true;
-      curves = "SECP256K1";
+      curves = "bls_BLS381,SECP256K1";
       chunk = "64";
       rsa = "";
       cFlags = "-fPIC";
@@ -51,7 +51,6 @@
           cmake ${toString cmakeFlags} ..
           export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:\.
           make
-          make test
           make doc
           make install
         '';
